@@ -1,0 +1,64 @@
+<nav class="navbar navbar-light  d-flex flex-row justify-content-between" 
+style="background-color: #e3f2fd;">
+
+<a class="navbar-brand text-black text-uppercase" href="/">Home </a>
+<a class="navbar-brand text-black text-uppercase" href="/students/">Student</a>
+
+<a class="navbar-brand text-black text-uppercase SignUp" href="#">SignUp</a>
+<a class="navbar-brand text-black text-uppercase SignIn d-none" href="#">SignIn</a>
+
+
+</nav>
+<br/>
+<br/>
+
+<form action="/students/signin" method="POST" id="signinForm"  >
+  <ul class="list-group">
+
+    <li class="list-group-item">
+    <div class="form-group row">
+    <label for="inputEmail" class="col-sm-5 col-form-label">Email :</label>
+    <div class="col-sm-7 ">
+      <input type="email" name="Email" class="form-control" id="inputEmail" placeholder="Enter Email"  required>
+    </div></div></li>
+
+        <li class="list-group-item">
+    <div class="form-group row">
+    <label for="inputPassword" class="col-sm-5 col-form-label">Password :</label>
+    <div class="col-sm-7 ">
+      <input type="password" name="Password" class="form-control" id="inputPassword" placeholder="Enter password"  required>
+    </div></div></li>
+      <input id="SignUp" class="btn btn-success  " type="submit" value="SignIn">
+
+
+</ul>
+</form>
+
+
+  <form action="/students/signup" method="POST" id="signupForm" class="d-none" >
+  <ul class="list-group">
+    <li  class="list-group-item ">
+  <div class="form-group row ">
+    <label for="inputName1" class="col-sm-5 col-form-label ">Name :</label>
+    <div class="col-sm-7 ">
+      <input type="text" name="Name" class="form-control " id="inputName1"
+       placeholder="Enter Name" required>
+    </div></div></li>
+    <li class="list-group-item">
+    <div class="form-group row">
+    <label for="inputEmail1" class="col-sm-5 col-form-label">Email :</label>
+    <div class="col-sm-7 ">
+      <input type="email" name="Email" class="form-control" id="inputEmail1" placeholder="Enter Email"  required>
+    </div></div></li>
+
+        <li class="list-group-item">
+    <div class="form-group row">
+    <label for="inputPassword1" class="col-sm-5 col-form-label">Password :</label>
+    <div class="col-sm-7 ">
+      <input type="password" name="Password" class="form-control" id="inputPassword1" placeholder="Enter password"  required>
+    </div></div></li>
+      <input id="SignIn" class="btn btn-success  " type="submit" value="SignUp">
+
+
+</ul>
+</form>

@@ -1,0 +1,24 @@
+body{
+    width: 100%;
+    background: darkblue;
+}
+.container{
+box-sizing: border-box;
+display: inline-block;
+overflow: hidden;
+}
+.student ,.instructor{
+height: 200px;
+width: 25rem;
+font-size: 55px;
+margin-top: 15%;
+margin-left: 12%;
+}
+
+
+
+
+
+
+
+

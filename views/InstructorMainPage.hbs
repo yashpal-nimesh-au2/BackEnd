@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Instructor</a>
+    <form action="/instructors/logout" method="POST" class="form-inline ml-auto">
+      <button class="btn btn-outline-danger " type="submit">LogOut</button>
+    </form>
+</nav>
+
+{{#each StudentData}}
+<br/>
+<div>
+<li style="color: white;" >Name :-    {{this.Name}}</li>
+<li style="color: white;">Email :-   {{this.Email}}</li>
+<li style="color: white;">Attendance :-  </li>
+<form>
+<div class="col-lg-2">
+    <div class="input-group">
+<span class="input-group-btn">
+<button type="submit"
+ class="quantity-left-minus btn btn-danger btn-number Minus"  data-type="minus" data-field="">
+    </span>-
+</button>
+</span>
+<input type="email" name="Email" class="form-control d-none" value={{this.Email}} >
+<input type="text" name="quantity" class="form-control input-number" value={{this.Attendance}}>
+<span class="input-group-btn">
+<button type="sumbit" class="quantity-right-plus btn btn-success btn-number Add" >
+    +
+</button>
+</span>
+</div>
+    </div>
+    </form>
+</div>
+
+{{/each}}
+
